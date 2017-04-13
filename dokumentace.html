@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dokumentace - confapp</title>
+	</head>
+	<body>
+		<header>
+			<h1>Dokumentace - confapp</h1>
+		</header>
+
+		<nav id="menu">
+			<h2>Obsah</h2>
+			<ul>
+				<li><a href="#menu">Obsah s odkazy</a></li>
+				<li><a href="#uvod">Úvod</a></li>
+				<li><a href="#metodika">Metodika</a></li>
+				<li><a href="#elementy">Popis elementů a atributů</a></li>
+				<li><a href="#transformace">Popis transformace</a></li>
+				<li><a href="#zaver">Závěr</a></li>
+				<li><a href="#zapati">Zápatí</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+				<section id="uvod">
+					<h2>Úvod</h2>
+					<p>
+						V této práci na předmět Značkovací jazyky se zabývám tvorbou XML dokumentu, XSD schéma, XSL transformace do JSON a dokumentací. Téma tohoto projektu jsem si vybral nastavení fiktivní aplikace.
+					</p>
+				</section>
+
+				<section id="metodika">
+					<h2>Metodika</h2>
+					<p>Tento projekt vznikal v programu Atom. Tento program používám pro rychlou editaci a úpravu souborů html, css a tak dále. Odkaz ke stažení - <a href="https://atom.io/">Atom</a>. Nejprve jsem vytvořil XML dokument. Tento dokument vznikal tak, že jsem vymýšlel elementy a atributy, do kterých by má fiktivní aplikace ukládala informace. Ten jsem dále pomocí stránky <a href="http://www.freeformatter.com/xsd-generator.html">Freeformater</a> s nastavením Russian Doll překonvertoval do XSD souboru. Dalším souborem, který jsem vytvořil je XSL transformace do JSON. Soubor XSL jsem upravoval pomocí online nástroje <a href="http://www.freeformatter.com/xsl-transformer.html">Freeformatter</a>. Nejprve jsem vložil kód XML souboru a po té začal postupně vytvářet XSL soubor. Po spuštění nástroje se vygenerovala JSON kód.</p>
+				</section>
+
+				<section id="elementy">
+					<h2>Popis elementů a atributů</h2>
+
+					<table border="1">
+						<tr>
+							<th>Název elementu či atributu</th>
+							<th>Stručný popis</th>
+						</tr>
+						<tr>
+							<td>version</td>
+							<td>Verze aplikace z které se nastavení ukládá.</td>
+						</tr>
+						<tr>
+							<td>actual</td>
+							<td>Atribut elementu version, který popisuje zda je aplikace aktuální.</td>
+						</tr>
+						<tr>
+							<td>update</td>
+							<td>Atribut elementu version, který popisuje zda aplikace potřebuje aktualizaci.</td>
+						</tr>
+						<tr>
+							<td>connection</td>
+							<td>Elementu connection, obsahuje 3 typy připojení, kam aplikace se má připojit</td>
+						</tr>
+						<tr>
+							<td>server</td>
+							<td>Elementu server, obsahuje název, adresu a port pro připojení k serverům</td>
+						</tr>
+						<tr>
+							<td>region</td>
+							<td>Atribut elementu server, který popisuje pro jaký region je server určen.</td>
+						</tr>
+						<tr>
+							<td>name</td>
+							<td>Potomek elementu server, který obsahuje jméno serveru.</td>
+						</tr>
+						<tr>
+							<td>address</td>
+							<td>Potomek elementu server, který obsahuje adresu serveru.</td>
+						</tr>
+						<tr>
+							<td>port</td>
+							<td>Potomek elementu server, který obsahuje port na který se aplikace připojuje.</td>
+						</tr>
+						<tr>
+							<td>user</td>
+							<td>Elementu, který obsahuje zákkladní informace o uživateli fiktivní aplikace.</td>
+						</tr>
+						<tr>
+							<td>active</td>
+							<td>Atribut elementu user, který obsahuje informaci, zda je uživatel aktivní.</td>
+						</tr>
+						<tr>
+							<td>first_name</td>
+							<td>Potomek elementu user, který obsahuje jméno uživatele.</td>
+						</tr>
+						<tr>
+							<td>last_name</td>
+							<td>Potomek elementu user, který obsahuje jméno uživatele.</td>
+						</tr>
+						<tr>
+							<td>country</td>
+							<td>Potomek elementu user, který obsahuje, z jaké země uživatel je.</td>
+						</tr>
+						<tr>
+							<td>location</td>
+							<td>Potomek elementu user, který obsahuje, z jakého města dané země uživatel je.</td>
+						</tr>
+						<tr>
+							<td>gender</td>
+							<td>Potomek elementu user, který obsahuje údaje o pohlaví uživatele.</td>
+						</tr>
+						<tr>
+							<td>age</td>
+							<td>Potomek elementu user, který obsahuje údaje o věku uživatele.</td>
+						</tr>
+						<tr>
+							<td>last_login</td>
+							<td>Potomek elementu user, který obsahuje údaje o čase posledního přihlášení uživatele.</td>
+						</tr>
+						<tr>
+							<td>last_login</td>
+							<td>Atribut elementu last_login, který obsahuje jednotky v kterých je uvedeno číslo.</td>
+						</tr>
+						<tr>
+							<td>sound</td>
+							<td>Elementu, který obsahuje základní nastavení zvuků z programu.</td>
+						</tr>
+						<tr>
+							<td>sound</td>
+							<td>Elementu, který obsahuje základní nastavení zvuků z programu.</td>
+						</tr>
+						<tr>
+							<td>volume</td>
+							<td>Potomek elementu sound, který obsahuje základní nastavení hlasitosti programu.</td>
+						</tr>
+						<tr>
+							<td>enabled</td>
+							<td>Atribut elementu volume, který říká, zda je zvuk zapnut.</td>
+						</tr>
+						<tr>
+							<td>general</td>
+							<td>Potomek elementu volume, který obsahuje úroveň hlasitosti základního prostředí aplikace.</td>
+						</tr>
+						<tr>
+							<td>min</td>
+							<td>Atribut elementu general, který určuje minimum pro hodnotu.</td>
+						</tr>
+						<tr>
+							<td>max</td>
+							<td>Atribut elementu general, který určuje maximum pro hodnotu.</td>
+						</tr>
+						<tr>
+							<td>background_music</td>
+							<td>Potomek elementu volume, který obsahuje úroveň hlasitosti hudby, která hraje na pozadí.</td>
+						</tr>
+						<tr>
+							<td>min</td>
+							<td>Atribut elementu background_music, který určuje minimum pro hodnotu.</td>
+						</tr>
+						<tr>
+							<td>max</td>
+							<td>Atribut elementu background_music, který určuje maximum pro hodnotu.</td>
+						</tr>
+						<tr>
+							<td>speech</td>
+							<td>Potomek elementu volume, který obsahuje úroveň hlasitosti mluveného slova v aplikaci.</td>
+						</tr>
+						<tr>
+							<td>min</td>
+							<td>Atribut elementu speech, který určuje minimum pro hodnotu.</td>
+						</tr>
+						<tr>
+							<td>max</td>
+							<td>Atribut elementu speech, který určuje maximum pro hodnotu.</td>
+						</tr>
+					</table>
+				</section>
+
+				<section id="transformace">
+					<h2>Popis transformace</h2>
+					<h3>JSON transformace</h3>
+					<p>Nejprve bych chtěl zmínit, že pro transformaci do JSON jsem použil online nástroj <a href="http://www.freeformatter.com/xsl-transformer.html">Freeformatter</a>. Po té, co jsem vložil XML kód z mého projektu, musel jsem do dalšího okna začít psát transformaci XSL. Výsledkem byl JSON kód.</p>
+				</section>
+
+				<section id="zaver">
+					<h2>Závěr</h2>
+					<p>Tato semestrální práce je pro mne velkým přínosem, naučil jsem se spousty nových věcí. Nejtěžší částí této práce byla transformace do JSON. Projekt vznikal za použití programu SourceTree, což je program na práci s verzováním projektů.</p>
+				</section>
+			</article>
+		</main>
+
+		<footer id="zapati">
+			<hr>
+			<table>
+				<tr>
+					<td><a target="_blank" href="https://github.com/jirkakastanek/project">Github repozitář k této semestrální práci</a></td>
+				</tr>
+				<tr>
+					<td>Jiří Kaštánek</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>
