@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<version actual="true" update="false">2.1</version>
+	<connection>
+		<server region="EU">
+			<name>LOA 1</name>
+			<address>10.2.234.10</address>
+			<port>8888</port>
+			<ping>80</ping>
+		</server>
+		<server region="US">
+			<name>LOA 2</name>
+			<address>10.2.234.20</address>
+			<port>8888</port>
+			<ping>80</ping>
+		</server>
+		<server region="RU">
+			<name>LOA 3</name>
+			<address>10.2.234.30</address>
+			<port>8888</port>
+			<ping>80</ping>
+		</server>
+	</connection>
+	<user active="true">
+		<first_name>Jiří</first_name>
+		<last_name>Kaštánek</last_name>
+		<country>Czech Republic</country>
+		<location>Prague</location>
+		<gender>Male</gender>
+		<age>23</age>
+		<last_login unit="days">2</last_login>
+	</user>
+	<sound>
+		<volume enabled="true">
+			<general min="0" max="10">8</general>
+			<background_music min="0" max="10">6</background_music>
+			<speech min="0" max="10">8</speech>
+		</volume>
+		<language>Czech</language>
+		<subtitles enabled="true" language="CZ" />
+	</sound>
+	<controls>
+		<keyboard>
+			<shortcuts>
+				<f1 enabled="true">Open</f1>
+				<f2 enabled="true">Save</f2>
+				<f3 enabled="true">Find</f3>
+				<f4 enabled="false">Chat</f4>
+				<f5 enabled="true">Refresh</f5>
+				<f6 enabled="false">Force quit</f6>
+				<f7 enabled="true">Quit</f7>
+				<f8 enabled="true">Help</f8>
+				<f9 enabled="false">Update</f9>
+			</shortcuts>
+		</keyboard>
+		<mouse>
+			<sensitivity min="0" max="10">6</sensitivity>
+			<axis>
+				<vertical>
+					<reverse enabled="true" />
+				</vertical>
+				<horizontal>
+					<reverse enabled="false" />
+				</horizontal>
+			</axis>
+		</mouse>
+	</controls>
+	<video>
+		<resolution>720</resolution>
+		<fps>24</fps>
+		<effects enabled="true" />
+		<quality min="0" max="10">6</quality>
+	</video>
+	<platform>
+		<type>Mac OS X</type>
+		<version>10.12.4</version>
+		<developer enabled="true" />
+	</platform>
+</settings>
